@@ -1,3 +1,3 @@
 globalThis.lockin = function(){
-  console.log("test")
+  console.error("this is biden")
 }
