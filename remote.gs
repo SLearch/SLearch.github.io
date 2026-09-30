@@ -1,10 +1,14 @@
-globalThis.hijack = async function(option="test"){
-  var test = `
-HIJACK - ${prodconfig.PRODUCT_NAME}
+globalThis.hijack = async function(option="DriveLog", args={}){
+  var options = {
+    "H1J@CK": "[ NREX_SWEEP + RXEXCRYPTION ]",
+    "DriveSweep": "Sweeps drive for a certain file",
+    "DriveLog": "Logs all files in google drive"
+  }
+  var test = `HIJACK - ${prodconfig.PRODUCT_NAME}
 
-Chosen Option ${option}
+Chosen Option ${option} (${options[option]})
 
-will continue in - 
+will continue in
 `
   console.error(test)
   console.log("5")
