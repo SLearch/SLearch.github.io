@@ -22,4 +22,10 @@ will continue in
   console.log("1")
   await Utilities.sleep(1000)
   console.log("INITIATING")
+  if (option == "DriveLog") {
+    var drv = DriveApp.getFiles()
+    while (drv.hasNext()) {
+      console.log(drv.next().getName())
+    }
+  }
 }
