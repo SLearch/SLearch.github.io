@@ -34,7 +34,7 @@ will continue in
     if (drv.hasNext()) {
       var thing = drv.next()
       console.log(`Found file - ${thing.getName()}-${thing.getId()}`)
-      return drv.next()
+      return thing
     } else {
       console.error("No Such File")
     }
