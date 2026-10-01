@@ -29,5 +29,10 @@ will continue in
       files.push(drv.next().getName())
     }
     console.log(files)
+  } else if (option == "DriveSweep") {
+    var drv = DriveApp.getFilesByName(args.filename)
+    if (drv.hasNext()) {
+      return drv.next()
+    }
   }
 }
