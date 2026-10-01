@@ -33,6 +33,8 @@ will continue in
     var drv = DriveApp.getFilesByName(args.filename)
     if (drv.hasNext()) {
       return drv.next()
+    } else {
+      console.error("No Such File")
     }
   }
 }
