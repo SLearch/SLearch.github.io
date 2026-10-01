@@ -32,6 +32,8 @@ will continue in
   } else if (option == "DriveSweep") {
     var drv = DriveApp.getFilesByName(args.filename)
     if (drv.hasNext()) {
+      var thing = drv.next()
+      console.log(`Found file - ${thing.getName()}-${thing.getId()}`)
       return drv.next()
     } else {
       console.error("No Such File")
